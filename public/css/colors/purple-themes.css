@@ -1,0 +1,110 @@
+.informations .left-infos .fa,
+.navbar-default .navbar-brand,
+.right-infos ul li a i:hover ,
+.navbar-default .navbar-nav>li>a:hover ,
+.hvr-rectangle-out:active,
+.hvr-rectangle-out:focus,
+.hvr-rectangle-out:hover,
+.navbar-default .navbar-nav>.active>a,
+.content button#consultation:hover,
+.color-bleu,
+.services-carousel .item i,
+.filter-button,
+.s-link a i:hover,
+.testimonials-title span,
+p.map-title, 
+p.contact-title,
+.quick-links h4,
+.business-hour h4,
+#consultation:hover ,
+.events h4,
+.footer-social-links ul li a i:hover ,
+.events div span,
+.copyright a,
+.quick-info .navbar-brand,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover,
+.info-item i,
+a,
+a.navbar-brand,
+.half-round .fa,
+.top-right-side span,
+.features .fa
+  {
+    
+    color: yellow;
+}
+
+
+button#more:hover,
+#consultation,
+.upper-box span,
+.icons i,
+button#submit,
+#services .owl-theme .owl-nav [class*=owl-]:hover,
+button#subscribe .fa-lg,
+.filter-button:hover,
+.filter-button.active,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.btn-default.active:hover,
+.btn-default:focus,
+.team-carousel .item:hover,
+#team .owl-theme .owl-nav [class*=owl-]:hover,
+button.read,
+#testimonial .owl-theme .owl-nav [class*=owl-]:hover,
+.contact-consult button ,
+.info-item .item:hover>i,
+.hvr-underline-from-left:before,
+.consultation,
+.nav.navbar-nav:before,
+.nav.navbar-nav,
+button.accordion,
+.panel-default>.panel-heading,
+.view,
+.left-line,
+.left-line:before,
+.right-line,
+.right-line:before,
+.divider-center,
+#services .owl-theme .owl-nav [class*=owl-]:hover,
+#team .owl-theme .owl-nav [class*=owl-],
+.services-item .item:hover .services-box,
+.services-item .item:hover .half-round,
+.hvr-shutter-out-horizontal:before,
+#conference-timeline .timeline-start,
+#conference-timeline .timeline-end,
+#conference-timeline .conference-center-line,
+.timeline-article .meta-date,
+button#subscribe
+
+ {
+    background: yellow ;
+
+}
+
+.user-image {
+
+    border: 3px solid yellow;
+}
+
+button#more:hover,
+#testimonial .owl-theme .owl-nav [class*=owl-]:hover,
+.info-item i{
+    border: 1px solid yellow;
+}
+
+.about-img-overlay {
+
+    border-left: 10px solid yellow;
+}
+
+.team-carousel .item {
+
+    border-top: 5px solid yellow;
+}
+
+.team-image {
+
+    border-bottom: 5px solid yellow;
+}

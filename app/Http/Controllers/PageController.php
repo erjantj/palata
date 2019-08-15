@@ -41,7 +41,8 @@ class PageController extends Controller
         $slug = 'contacts';
         $page = Page::where('slug', '=', $slug)->firstOrFail();
         $contact = Contact::latest()->first();
+        $coordinates = $contact->getCoordinates()[0];
 
-        return view('contacts', compact('page', 'contact'));
+        return view('contacts', compact('page', 'contact', 'coordinates'));
     }
 }
