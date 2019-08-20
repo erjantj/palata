@@ -3,10 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\News;
+use App\Page;
 use Illuminate\Http\Request;
 
 class NewsController extends Controller
 {
+
+    const PAGE_SIZE = 20;
+
+
     /**
      * Display a listing of the resource.
      *
@@ -14,8 +19,11 @@ class NewsController extends Controller
      */
     public function index()
     {
-        $newsList = News::all();
-        return view('news.index', compact('newsList'));
+        $slug = 'news';
+        $page = Page::where('slug', '=', $slug)->firstOrFail();
+
+        $newsList = News::query()->latest()->paginate(self::PAGE_SIZE);
+        return view('news.index', compact('newsList', 'page'));
     }
 
     /**

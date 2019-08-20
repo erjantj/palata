@@ -16,12 +16,14 @@
 
 			<div class="events col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<h4>{!! __('messages.footer_news') !!}</h4>
-				<div><span>6 June, 2017</span>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				@foreach($latestNews as $news)
+				<div>
+					<a href="/news/{{ $news->slug }}">
+						<span>{{ $news->created_at->formatLocalized('%d %B %Y') }}</span>
+						<p>{{ $news->title }}</p>
+					</a>
 				</div>
-				<div><span>21 Jul, 2017</span>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				</div>
+				@endforeach
 			</div>
 		</div>
 	</div>
