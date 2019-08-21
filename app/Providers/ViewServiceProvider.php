@@ -27,5 +27,8 @@ class ViewServiceProvider extends ServiceProvider
         View::composer(
             '_footer', 'App\Http\View\Composers\FooterComposer'
         );
+        View::composer(
+            '_header', 'App\Http\View\Composers\ContactsComposer'
+        );
     }
 }

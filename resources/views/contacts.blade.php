@@ -14,8 +14,7 @@
         // Initialize and add the map
         function initMap() {
           // The location of Uluru
-          // var uluru = {lat: {{ $coordinates['lat'] }}, lng: {{ $coordinates['lng'] }} };
-          var uluru = {lat: 43.238376, lng: 76.923723 };
+          var uluru = {lat: {{ $coordinates['lat'] }}, lng: {{ $coordinates['lng'] }} };
           // The map, centered at Uluru
           var map = new google.maps.Map(
               document.getElementById('map'), {zoom: 15, center: uluru});
@@ -38,7 +37,7 @@
       <div class="col-md-6 col-xs-12">
         <address>
             <p class="label-title">{{ __('messages.phone_number') }}</p>
-            <p>{!! $contact->phone_number !!}</p>
+            <p>{!! $contact->phone_number_full !!}</p>
         </address>
       </div>
     </div>

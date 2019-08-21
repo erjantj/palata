@@ -14,7 +14,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-5 col-sm-8 col-xs-12">
-                    <div class="informations "> <span><i class="fa fa-phone" aria-hidden="true"></i>&nbsp; 1-907-762-7801</span> <span>&nbsp;&nbsp;&nbsp;</span><span><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp; Skypiea@mail.com</span> </div>
+                    <div class="informations "> <span><i class="fa fa-phone" aria-hidden="true"></i>&nbsp; {{ $contact->phone_number }}</span> <span>&nbsp;&nbsp;&nbsp;</span><span><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp; {{ $contact->email}}</span> </div>
                 </div>
                 <div class="consulting">
                     <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12"> <a href="consultation.html" class="consultation hvr-buzz-out">Free Consultation</a> </div>
