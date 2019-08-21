@@ -885,10 +885,6 @@ section#team {
 
 /*********** Carousel ( Image + Names + Social Networks ( Icons ) + Navigation ) *************/
 
-.team-image img {
-    height: 100% !important;
-}
-
 .team-image {
 	height: 270px;
 	margin-bottom: 20px;
@@ -949,35 +945,6 @@ section#team {
 	-webkit-transition-duration: .5s;
 	     -o-transition-duration: .5s;
 	        transition-duration: .5s;
-}
-
-.team-carousel .item:hover>.team-hover {
-	position: absolute;
-	font-size: 15px;
-	text-align: center;
-	background: rgba(2, 2, 2, 0.5);
-	height: 265px;
-	width: 100%;
-	visibility: visible;
-	-webkit-transition-duration: .3s;
-	     -o-transition-duration: .3s;
-	        transition-duration: .3s;
-	top: 0;
-	left: 0;
-}
-
-.team-carousel .item:hover>.team-image {
-	border-bottom: 5px solid white;
-	-webkit-transition-duration: .3s;
-	     -o-transition-duration: .3s;
-	        transition-duration: .3s;
-}
-
-.team-carousel .item:hover {
-	color: white;
-	-webkit-transition-duration: .3s;
-	     -o-transition-duration: .3s;
-	        transition-duration: .3s;
 }
 
 .team-info span:first-child {

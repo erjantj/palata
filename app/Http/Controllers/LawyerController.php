@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Page;
 use App\Lawyer;
 use Illuminate\Http\Request;
 
@@ -14,8 +15,11 @@ class LawyerController extends Controller
      */
     public function index()
     {
+        $slug = 'lawyers';
+        $page = Page::where('slug', '=', $slug)->firstOrFail();
+
         $lawyersList = Lawyer::all();
-        return view('lawyer.index', compact('lawyersList'));
+        return view('lawyer.index', compact('lawyersList', 'page'));
     }
 
     /**
