@@ -1008,6 +1008,7 @@ p.contact-title,
 	display: block;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	font-weight: 400 !important;
 }
 
 
@@ -1869,6 +1870,14 @@ section#projects .col-lg-4 {
 .post__image-header {
 	max-width: 100%;
 	margin-bottom: 30px;
+}
+
+.alert {
+	position: fixed;
+    top: 15px; 
+    left: 30%;
+    width: 40%;
+    z-index: 99;
 }
 
 @media (min-width: 768px) {

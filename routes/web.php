@@ -14,6 +14,7 @@
 Route::get('/', 'PageController@index');
 Route::get('/about', 'PageController@about');
 Route::get('/contacts', 'PageController@contacts');
+Route::post('/contacts/callback', 'PageController@callback');
 
 Route::get('/news', 'NewsController@index');
 Route::get('/news/{news}', 'NewsController@show');

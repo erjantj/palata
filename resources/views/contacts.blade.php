@@ -49,6 +49,12 @@
         </address>
       </div>
     </div>
+    <div class="row">
+      <div class="col-md-12 col-xs-12">
+        @component('_callback')
+        @endcomponent
+      </div>
+    </div>
   </div>
 </div>
 @endsection

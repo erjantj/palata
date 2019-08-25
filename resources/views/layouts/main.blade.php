@@ -28,13 +28,17 @@
 
         <section class="page">
             <div class="container">
-                <div class="row">
-                    @yield('content')
-                </div>
+                @yield('content')
             </div>
             </div>
         </section>
         @component('_footer')
         @endcomponent
+
+        <script src="/js/jquery-3.4.1.min.js"></script>
+        <script src="/js/jquery.inputmask.min.js"></script>
+        <script src="/js/util.js"></script>
+        <script src="/js/alert.js"></script>
+        <script src="/js/app.js"></script>
     </body>
 </html>
