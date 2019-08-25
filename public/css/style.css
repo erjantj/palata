@@ -40,7 +40,6 @@ Assigned to:	Shyam (rajiamine7@gmail.com)
 
 a:hover {
 	text-decoration: none;
-	color: white;
 }
 
 li {
@@ -318,15 +317,20 @@ div#bs-example-navbar-collapse-1 {
 	text-transform: uppercase
 }
 
-.navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a.active {
 	background: #3a3e4a;
 	color: white;
-	-webkit-transition: 0.4s;
-	-o-transition: 0.4s;
-	transition: 0.4s;
 }
 
-.navbar-default .navbar-nav>li:hover:last-child>a {
+.navbar-default .navbar-nav>li:last-child,
+.navbar-default .navbar-nav>li:last-child>a{
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.navbar-default .navbar-nav>li:hover:last-child>a 
+.navbar-default .navbar-nav>li:hover:last-child{
 	border-bottom-right-radius: 5px;
 	border-top-right-radius: 5px;
 }
@@ -985,9 +989,9 @@ section#contact {
 }
 
 p.map-title,
-p.contact-title {
+p.contact-title,
+.label-title {
 	font-size: 20px;
-	margin-bottom: 30px;
 	display: block;
 	text-transform: uppercase;
 	letter-spacing: 1px;

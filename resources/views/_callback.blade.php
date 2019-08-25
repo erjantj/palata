@@ -1,7 +1,7 @@
 <form class="form-inline row" action="/contacts/callback" method="post" id="callback">
   {!! csrf_field() !!}
   <div class="col-md-12 col-xs-12">
-    <label class="label-title" for="phone">{{ __('messages.callback_label') }}</label>
+    <p class="label-title" for="phone">{{ __('messages.callback_label') }}</p>
   </div>
   <div class="col-md-4 col-xs-12">
     <input type="text" name="name" placeholder="{{ __('messages.first_name') }}" />
