@@ -56,6 +56,9 @@ class PageController extends Controller
         $data = $request->validate([
             'name' => 'required|max:255|string',
             'phone_number' => 'required|max:255|regex:/^(\+7[0-9\(\)-]{13})$/',
+        ], [], [
+            'name' => __('messages.first_name'),
+            'phone_number' => __('messages.phone_number'),
         ]);
 
         tap(new Callback($data))->save();
