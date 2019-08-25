@@ -11,7 +11,10 @@ return [
     'footer_news' => 'RECENT <span>NEWS</span>'
     'more' => 'more',
     'next' => 'Next'
+    'news_title' => 'News',
     'phone_number' => 'phone_number',
+    'projects_title' => 'Our projects',
     'previous' => 'Previous',
-    'send' => 'Send'
+    'send' => 'Send',
+    'services_title' => 'Our Services'
 ];

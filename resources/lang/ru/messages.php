@@ -11,7 +11,10 @@ return [
     'footer_news' => 'ПОСЛЕДНИЕ <span>НОВОСТИ</span>',
     'more' => 'подробнее',
     'next' => 'Далее',
+    'news_title' => 'Новости',
     'phone_number' => 'Телефон',
+    'projects_title' => 'Наши проекты',
     'previous' => 'Назад',
-    'send' => 'Отправить'
+    'send' => 'Отправить',
+    'services_title' => 'Наши услуги'
 ];

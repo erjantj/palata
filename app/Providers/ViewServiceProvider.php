@@ -24,7 +24,7 @@ class ViewServiceProvider extends ServiceProvider
     public function boot()
     {
         // Using class based composers...
-        View::composer('_footer', 'App\Http\View\Composers\FooterComposer');
+        View::composer('index', 'App\Http\View\Composers\IndexComposer');
         View::composer('_header', 'App\Http\View\Composers\ContactsComposer');
     }
 }
