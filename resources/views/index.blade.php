@@ -30,34 +30,13 @@
 			<div class="services-title">
 				<h2>
 					<span class="left-line"></span> 
-					{{ __('messages.services_title') }}
-					<span class="right-line"></span></h2>
-				<!-- Change content from here -->
-				<p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi voluptatem fugit voluptates atque reiciendis commodi.</p>
+					{{ $pageAbout->title }}
+					<span class="right-line"></span>
+				</h2>
+				<p class="para">{!! $pageAbout->excerpt !!}</p>
 			</div>
 			<div class="services-item">
-				<div class="row">
-					<div class="item col-md-4">
-						<!-- Change content from here -->
-						<div class="services-box"> 
-							<span class="box-title">Special Ideas</span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas magni consequuntur.</p>
-						</div>
-					</div>
-					<div class="item col-md-4">
-						<!-- Change content from here -->
-						<div class="services-box"> 
-							<span class="box-title">Content Marketing</span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas magni consequuntur.</p>
-						</div>
-					</div>
-					<div class="item col-md-4">
-						<div class="services-box"> 
-							<span class="box-title">Providing Solutions</span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas magni consequuntur.</p>
-						</div>
-					</div>
-				</div>
+				<a href="/membership" class="btn btn-primary">{{ __('messages.become_member') }}</a>
 			</div>
 		</div>
 	</div>
@@ -66,29 +45,20 @@
 <section id="projects">
 	<div class="container">
 		<div class="row">
-			<div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<!-- change title-->
-				<h2 class="gallery-title">
+			<div class="projects-title">
+				<h2>
 					<span class="left-line"></span> 
-					{{ __('messages.projects_title') }}
+					{{ $pageLawyers->title }}
 					<span class="right-line"></span>
 				</h2> 
+				<p class="para">{!! $pageLawyers->excerpt !!}</p>
 			</div>
 		</div>
-		<div class="row">
-			@foreach($projects as $index => $project)
-			<div class="gallery_product col-lg-4 col-md-4 col-sm-12 col-xs-12 filter hdpe {{ ($index+1)%3==0?'thelast':''}}">
-				<div class="gal-img">
-					<div class="gal-hover">
-						<div class="gal-text"> 
-							<span>{{ $project->name }}</span>
-							<br> <span>{{ $project->client_name }}</span> </div>
-						<!-- change image here -->
-					</div> 
-					<img src="{{ Voyager::image( $project->thumbnail('medium')) }}" class="img-responsive" alt=""> 
-				</div>
-			</div>
-			@endforeach
+		<div class="row team-carousel projects-items">
+			@include('lawyer/_lawyers', ['lawyersList' => $lawyersList])
+		</div>
+		<div class="row projects-button">
+			<a href="/lawyers" class="btn btn-primary">{{ __('messages.see_list') }}</a>
 		</div>
 	</div>
 </section>
@@ -107,12 +77,12 @@
 				<div class="row">
 					@foreach($latestNews as $news)
 					<div class="col-md-4 col-sm-6 col-xs-12 post__block">
-						<a href="news/{{ $news->slug }}">
+						<a href="/news/{{ $news->slug }}">
 							<div class="post__image" style="background-image: url('{{ Voyager::image( $news->thumbnail('medium')) }}');"></div>
 						</a>
 						<div class="post__exerpt">
 							<h4 class="post__exerpt-title">
-								<a href="news/{{ $news->slug }}">
+								<a href="/news/{{ $news->slug }}">
 									{{ $news->title }}
 								</a>
 							</h4>

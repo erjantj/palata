@@ -40,8 +40,8 @@
             </div>
             <div class="consulting">
                 <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12"> 
-                    <a href="/contacts#callback" class="consultation hvr-buzz-out">
-                        {{ __('messages.callback') }}
+                    <a href="/membership" class="consultation hvr-buzz-out">
+                        {{ __('messages.become_member') }}
                     </a> 
                 </div>
             </div>

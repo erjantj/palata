@@ -5,10 +5,13 @@ namespace App\Http\Controllers;
 use App\Contact;
 use App\Page;
 use App\Callback;
+use App\Lawyer;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
+    const LAWYERS_LIMIT = 3;
+
     /**
      * Display a index page
      *
@@ -16,7 +19,11 @@ class PageController extends Controller
      */
     public function index()
     {
-        return view('index');
+        $pageAbout = Page::where('slug', '=', 'about')->firstOrFail();
+        $pageLawyers = Page::where('slug', '=', 'lawyers')->firstOrFail();
+        $lawyersList = Lawyer::latest()->limit(self::LAWYERS_LIMIT)->get();
+
+        return view('index', compact('pageAbout', 'pageLawyers', 'lawyersList'));
     }
 
     /**

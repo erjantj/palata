@@ -85,8 +85,6 @@ span {
 }
 
 .para {
-	
-	max-width: 560px;
 	margin: 0px auto;
 }
 
@@ -391,12 +389,12 @@ a.navbar-brand {
 	color: white;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	font-size: 60px;
+	font-size: 45px;
 }
 
 .slider-text p {
 	line-height: 30px;
-	font-size: 16px;
+	font-size: 26px;
 	width: 50%;
 	margin-bottom: 30px;
 	color: white;
@@ -724,13 +722,33 @@ span.box-title {
 section#projects {
 	padding: 90px 0px;
 	background: #f7f7f7;
+	text-align: center;
 }
 
+.projects-title {
+	margin-bottom: 100px;
+	text-align: center;
+	width: 85%;
+	margin: 0px auto 60px auto;
+}
+
+.projects-title p {
+	line-height: 30px;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+.projects-items {
+	margin: 0px auto 60px auto;
+}
+.projects-button {
+	margin-top: 20px;
+}
 
 /***************** Title *********************/
 
 .gallery-title {
-	 margin: 0px auto 60px auto;
+	margin: 0px auto 60px auto;
 	text-align: center;
 }
 
@@ -749,8 +767,16 @@ section#projects {
 }
 
 .btn {
-	border-radius: 0px;
+	border-radius: 5px;
 	margin: 0px 10px;
+    display: inline-block;
+    letter-spacing: 2px;
+    padding: 12px 15px 10px 15px;
+    border: none;
+}
+
+.btn-primary {
+	background: #4bbfee;
 }
 
 .filter-button {
@@ -782,6 +808,14 @@ section#projects {
 .btn-default.active:focus,
 .btn-default.active:hover {
 	color: white;
+	outline: none;
+}
+
+.btn-primary:focus,
+.btn-primary:focus,
+.btn-primary:hover {
+	background: #3a3e4a;
+	color: #4bbfee;
 	outline: none;
 }
 

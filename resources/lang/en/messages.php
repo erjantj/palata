@@ -2,6 +2,7 @@
 
 return [
     'address' => 'address',
+    'become_member' => 'Become a member',
     'callback' => 'Request call back',
     'callback_label' => 'Leave your number, we will call you back',
     'callback_save' => 'Your request has been successfully saved.',
@@ -17,4 +18,5 @@ return [
     'previous' => 'Previous',
     'send' => 'Send',
     'services_title' => 'Our Services'
+    'see_list' => 'See list',
 ];

@@ -2,6 +2,7 @@
 
 return [
     'address' => 'Адрес',
+    'become_member' => 'Вступить в палату',
     'callback' => 'Заказать обратный звонок',
     'callback_label' => 'Оставьте ваш номер, мы перезвоним',
     'callback_save' => 'Ваша заявку успешно сохранена',
@@ -16,5 +17,6 @@ return [
     'projects_title' => 'Наши проекты',
     'previous' => 'Назад',
     'send' => 'Отправить',
-    'services_title' => 'Наши услуги'
+    'services_title' => 'Наши услуги',
+    'see_list' => 'Переийти в реестр юристов',
 ];
