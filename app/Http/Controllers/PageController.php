@@ -74,4 +74,17 @@ class PageController extends Controller
 
         return redirect('/contacts');
     }
+
+    /**
+     * Display membership page
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function membership()
+    {
+        $slug = 'membership';
+        $page = Page::where('slug', '=', $slug)->firstOrFail();
+
+        return view('membership', compact('page'));
+    }
 }
