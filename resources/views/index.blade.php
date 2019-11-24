@@ -75,19 +75,21 @@
 				</h2> 
 			</div>
 		</div>
-		@foreach($projects as $index => $project)
-		<div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-xs-12 filter hdpe {{ ($index+1)%3==0?'thelast':''}}">
-			<div class="gal-img">
-				<div class="gal-hover">
-					<div class="gal-text"> 
-						<span>{{ $project->name }}</span>
-						<br> <span>{{ $project->client_name }}</span> </div>
-					<!-- change image here -->
-				</div> 
-				<img src="{{ Voyager::image( $project->thumbnail('medium')) }}" class="img-responsive" alt=""> 
+		<div class="row">
+			@foreach($projects as $index => $project)
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-12 col-xs-12 filter hdpe {{ ($index+1)%3==0?'thelast':''}}">
+				<div class="gal-img">
+					<div class="gal-hover">
+						<div class="gal-text"> 
+							<span>{{ $project->name }}</span>
+							<br> <span>{{ $project->client_name }}</span> </div>
+						<!-- change image here -->
+					</div> 
+					<img src="{{ Voyager::image( $project->thumbnail('medium')) }}" class="img-responsive" alt=""> 
+				</div>
 			</div>
+			@endforeach
 		</div>
-		@endforeach
 	</div>
 </section>
 

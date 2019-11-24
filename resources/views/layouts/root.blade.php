@@ -33,8 +33,7 @@
 
         <script src="/js/jquery-3.4.1.min.js"></script>
         <script src="/js/jquery.inputmask.min.js"></script>
-        <script src="/js/util.js"></script>
-        <script src="/js/alert.js"></script>
+        <script src="/js/bootstrap.bundle.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxdhKC_EB71_upPMMLC17whhW3lu59ifo&callback=initMap" async defer></script>
         <script src="/js/app.js"></script>
     </body>

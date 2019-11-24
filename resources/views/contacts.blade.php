@@ -6,7 +6,7 @@
 <div class="row">
   <div class="col-md-12 col-xs-12">
     <h1>@yield('title')</h1>
-    <p>{!! $page->body !!}</p>
+    <p class="post__excerpt">{{ $page->excerpt }}</p>
   </div>
   <div class="col-md-6 col-xs-12">
      <div id="map"></div>
@@ -204,7 +204,7 @@
       <div class="col-md-6 col-xs-12">
         <address>
             <p class="label-title">{{ __('messages.email') }}</p>
-            <p><a href="emailto:{{ $contact->email }}"> {{ $contact->email }} </a></p>
+            <p><a href="mailto:{{ $contact->email }}"> {{ $contact->email }} </a></p>
         </address>
       </div>
     </div>
