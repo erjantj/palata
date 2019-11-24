@@ -1,5 +1,5 @@
  <header>
-    <div class="container">
+<!--     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
                 <div class="s-network">
@@ -47,7 +47,7 @@
             </div>
         </div>
     </div>
-    <hr>
+    <hr> -->
 
     <div class="menu" data-spy="affix" data-offset-top="80">
         <div class="container">

@@ -27,12 +27,14 @@
 <section id="services">
 	<div class="container">
 		<div class="row">
-			<div class="services-title">
-				<h2>
+			<div class="block-title">
+				<div class="block-heading">
 					<span class="left-line"></span> 
-					{{ $pageAbout->title }}
+					<h2>
+						{{ $pageAbout->title }}
+					</h2>
 					<span class="right-line"></span>
-				</h2>
+				</div>
 				<p class="para">{!! $pageAbout->excerpt !!}</p>
 			</div>
 			<div class="services-item">
@@ -45,12 +47,14 @@
 <section id="projects">
 	<div class="container">
 		<div class="row">
-			<div class="projects-title">
-				<h2>
+			<div class="block-title">
+				<div class="block-heading">
 					<span class="left-line"></span> 
-					{{ $pageLawyers->title }}
+					<h2>
+						{{ $pageLawyers->title }}
+					</h2>
 					<span class="right-line"></span>
-				</h2> 
+				</div> 
 				<p class="para">{!! $pageLawyers->excerpt !!}</p>
 			</div>
 		</div>
@@ -66,12 +70,14 @@
 <section id="news">
 	<div class="container">
 		<div class="row">
-			<div class="services-title">
-				<h2>
+			<div class="block-title">
+				<div class="block-heading">
 					<span class="left-line"></span> 
-					{{ __('messages.news_title') }}
+					<h2>
+						{{ __('messages.news_title') }}
+					</h2>
 					<span class="right-line"></span>
-				</h2>
+				</div>
 			</div>
 			<div class="services-item">
 				<div class="row">

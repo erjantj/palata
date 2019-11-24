@@ -106,7 +106,7 @@ span {
 	height: 2px;
 	line-height: 2px;
 	margin-right: 20px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	position: relative;
 	width: 150px;
 }
@@ -132,7 +132,7 @@ span {
 	height: 2px;
 	line-height: 2px;
 	margin-left: 20px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	position: relative;
 	width: 150px;
 }
@@ -624,7 +624,27 @@ a.accordion-toggle {
 
 
 
+/************************************************************** Inde Blocks Section *********************************************************/
 
+.block-title {
+	margin-bottom: 100px;
+	text-align: center;
+	width: 85%;
+	margin: 0px auto 60px auto;
+}
+
+.block-title p {
+	line-height: 30px;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+.block-heading{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
 
 /************************************************************** services Section *********************************************************/
 
@@ -1712,22 +1732,24 @@ section#projects .col-lg-4 {
 	#services .item {
 		margin: 47px 15px 0px 15px;
 	}
+	.block-title h2,
 	.services-title h2,
+	.projects-title h2,
 	.about-title h2,
 	.gallery-title,
 	.team-title h2,
 	.contact-title h2 {
-		font-size: 32px;
+		font-size: 30px;
 	}
 	.left-line,
 	.right-line {
 		width: 27px;
 	}
 	.left-line {
-		margin-right: 5px;
+		margin-right: 10px;
 	}
 	.right-line {
-		margin-left: 5px;
+		margin-left: 10x;
 	}
 	.img-about {
 		height: 500px;
